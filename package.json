@@ -1,6 +1,8 @@
 {
   "name": "template-electron-react-typescript",
   "version": "0.1.0",
+  "main":"build/electron/electron.js",
+  "homepage":"./",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
