@@ -1,21 +1,18 @@
-import React, { useState } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{count}</p>
+    <div className='App'>
+      <header className='App-header'>
+        <img src={logo} className='App-logo' alt='logo' />
         <button
           onClick={() => {
             console.log();
-            setCount(window.myAPI.counter(count));
+            window.myAPI.callSample({ name: 'test' });
           }}
         >
-          count
+          Sample
         </button>
       </header>
     </div>

@@ -1,8 +1,8 @@
 {
   "name": "template-electron-react-typescript",
   "version": "0.1.0",
-  "main":"build/electron/electron.js",
-  "homepage":"./",
+  "main": "build/electron/electron.js",
+  "homepage": "./",
   "private": true,
   "build": {
     "extends": null,
@@ -56,6 +56,7 @@
   },
   "devDependencies": {
     "electron": "^20.0.1",
-    "electron-builder": "^23.3.3"
+    "electron-builder": "^23.3.3",
+    "electron-store": "^8.1.0"
   }
 }

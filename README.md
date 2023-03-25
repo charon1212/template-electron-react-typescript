@@ -20,7 +20,7 @@ package-lock.json
 - electronを追加。（のちのexeファイルビルドのためにbuilderも）
 
 ```bash
-> npm i -D electron electron-builder
+> npm i -D electron electron-builder electron-store
 ```
 
 - electronのテンプレートを追加。（詳細は、electronフォルダのファイルを参照。）
@@ -41,7 +41,7 @@ package-lock.json
 
 ```json
 {
-  "script":{
+  "scripts":{
     "electron:dev": "tsc -p electron && electron .",
     "electron:prod": "npm run build && tsc -p electron && electron-builder --win --x64 --dir",
     "electron:prod:install": "npm run build && tsc -p electron && electron-builder --win --x64"
